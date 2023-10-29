@@ -7,10 +7,12 @@ const projectsPage = () => {
                 <span className="font-bold">Projects</span>
             </p>
             <table className="flex justify-center text-white/90">
-                <tr>
-                    <th>testing</th>
-                    <td>Test</td>
-                </tr>
+                <tbody>
+                    <tr>
+                        <th>testing</th>
+                        <td>Test</td>
+                    </tr>
+                </tbody>
             </table>
         </main>
     )
