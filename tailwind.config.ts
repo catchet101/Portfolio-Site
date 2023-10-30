@@ -8,9 +8,13 @@ const config: Config = {
   ],
   theme: {
     extend: {},
+    boxShadow: {
+      'projectFigure': '10px 15px 25px 0px rgba(0, 0, 0, 0.2)'
+    }
   },
   plugins: [
     require('@tailwindcss/typography')
   ],
 }
 export default config
+// rgba(0, 0, 0, 1)
