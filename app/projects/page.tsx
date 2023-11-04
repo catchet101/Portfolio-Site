@@ -1,47 +1,32 @@
 import React from 'react'
 import ProjectBox from '../components/projects/project-box'
 
-export default function projectsPage() {
-    const projectsRowTailwind = 'flex flex-row justify-center mt-16'
+export default function ProjectsPage() {
+    const projectsRowTailwind = 'flex flex-col sm:flex-row justify-center text-center mt-0 md:mt-16'
 
     return (
-        <main className='px-6 mx-auto text-white/90'>
-            <h1 className='mt-16 text-4xl text-center'>
+        <main className='main'>
+            <h1 className='page-header'>
                 <span className='font-bold'>Projects</span>
             </h1>
             <section className='flex flex-col justify-center text-center'>
                 <div className={projectsRowTailwind}>
                     <ProjectBox
-                        title='Project 1'
-                        description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
-                        link='/'
+                        title='Manga Scroll'
+                        description='React Native JavaScript app that you can use to search up and read all of your favourite manga.'
+                        link='/projects/manga-scroll'
                     />
                     <ProjectBox
                         title='Card Match Game'
-                        description='Java-based game where the goal is the match all of the pairs of cards on the table in the least amount of guesses.'
-                        link='/'
-                    />
-                    <ProjectBox
-                        title='Project 3'
-                        description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
-                        link='/'
+                        description='Java-based game where the goal is to match all of the pairs of cards on the table in the least amount of attempts.'
+                        link='/projects/card-match-game'
                     />
                 </div>
                 <div className={projectsRowTailwind}>
                     <ProjectBox
-                        title='Project 4'
-                        description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
-                        link='/'
-                    />
-                    <ProjectBox
-                        title='Project 5'
-                        description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
-                        link='/'
-                    />
-                    <ProjectBox
-                        title='Project 6'
-                        description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
-                        link='/'
+                        title='Fall Hacks 2023'
+                        description='12 Hours to build a project based on the prompt: "Turning over a new leaf". <br> Created a text-based adventure game narrated by AI using OpenAI&#39;s API'
+                        link='/projects/fall-hacks-2023'
                     />
                 </div>
             </section>

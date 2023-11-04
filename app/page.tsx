@@ -4,15 +4,15 @@ import React from 'react';
 import LanguagesTable from './components/main/languages-table';
 import ToolsTable from './components/main/tools-table';
 
-const sectionTailwind = 'w-full md:w-1/3'
+const sectionTailwind = 'w-full mt-16 md:w-1/3 md:mt-0'
 
 export default function Home() {
     return (
-        <main className='px-6 mx-auto text-white/90'>
-            <h1 className='mt-16 text-4xl text-center'>
+        <main className='main'>
+            <h1 className='page-header'>
                 <span className='whitespace-nowrap'>Hi I&#39;m <span className='font-bold'>Cameron</span></span>, Welcome to My Website
             </h1>
-            <div className='flex md:flex-row flex-col mt-16'>
+            <div className='flex md:flex-row flex-col mt-0 md:mt-16'>
                 {/* Languages section */}
                 <section className={sectionTailwind}>
                     <LanguagesTable/>
