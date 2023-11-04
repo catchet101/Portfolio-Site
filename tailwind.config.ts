@@ -16,5 +16,5 @@ const config: Config = {
     require('@tailwindcss/typography')
   ],
 }
+
 export default config
-// rgba(0, 0, 0, 1)

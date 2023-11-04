@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ProficiencyBar = (props: { barColor: string; percentage: number; }) => {
+export default function ProficiencyBar (props: { barColor: string; percentage: number; }) {
     const { barColor, percentage } = props;
     
     return (
@@ -10,5 +10,3 @@ const ProficiencyBar = (props: { barColor: string; percentage: number; }) => {
         </div>
     );
 };
-
-export default ProficiencyBar;
