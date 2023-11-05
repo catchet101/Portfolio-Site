@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { FaGithub } from 'react-icons/fa'
 
-export default function Navbar() {
+const Navbar = () => {
     return (
         <nav className='bg-slate-600 p-4 sticky top-0 drop-shadow-xl z-10'>
             <div className='prose prose-xl mx-auto flex justify-between flex-col sm:flex-row max-w-3xl'>
@@ -13,3 +13,5 @@ export default function Navbar() {
         </nav>
     )
 }
+
+export default Navbar
