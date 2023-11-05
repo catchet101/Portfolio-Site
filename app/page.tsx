@@ -1,4 +1,4 @@
-// note: need to run 'vercel --prod' after pushing to main to get vercel to work
+// note: may need to run 'vercel --prod' after pushing to main to get vercel to work
 'use client';
 import React from 'react';
 import LanguagesTable from './components/main/LanguagesTable';
@@ -12,7 +12,7 @@ export default function Home() {
             <h1 className='page-header'>
                 <span className='whitespace-nowrap'>Hi I&#39;m <span className='font-bold'>Cameron</span></span>, Welcome to My Website
             </h1>
-            <div className='flex md:flex-row flex-col mt-0 md:mt-16'>
+            <section className='flex flex-col md:flex-row mt-0 md:mt-16'>
                 {/* Languages section */}
                 <section className={sectionTailwind}>
                     <LanguagesTable/>
@@ -22,16 +22,17 @@ export default function Home() {
                     <h2 className='section-header'>
                         About Me
                     </h2>
-                    <p className='md:mx-6'>
+                    <p className='md:mx-6 leading-8'>
                         I&#39;m a 3rd year Computing Science student at SFU seeking my first co-op position. I&#39;m still figuring out what area of Computer Science I
-                        want to specialize in so I am open to any experience that will help me learn and grow.
+                        want to specialize in so I am open to any experience that will help me learn and grow.<br/>
+                        
                     </p>
                 </section>
                 {/* Tools section */}
                 <section className={sectionTailwind}>
                     <ToolsTable/>
                 </section>
-            </div>
+            </section>
         </main>
     )
 }

@@ -9,7 +9,7 @@ export default function ProjectsPage() {
             <h1 className='page-header'>
                 <span className='font-bold'>Projects</span>
             </h1>
-            <section className='flex flex-col justify-center text-center'>
+            <section className='flex flex-col'>
                 <div className={projectsRowTailwind}>
                     <ProjectBox
                         title='Manga Scroll'
