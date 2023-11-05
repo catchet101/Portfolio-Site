@@ -14,11 +14,11 @@ export default function Home() {
             </h1>
             <section className='flex flex-col md:flex-row mt-0 md:mt-16'>
                 {/* Languages section */}
-                <section className={sectionTailwind}>
+                <section className='section-thirds'>
                     <LanguagesTable/>
                 </section>
                 {/* About Me section */}
-                <section className={sectionTailwind + ' flex flex-col text-center'}>
+                <section className='section-thirds flex flex-col text-center'>
                     <h2 className='section-header'>
                         About Me
                     </h2>
@@ -29,7 +29,7 @@ export default function Home() {
                     </p>
                 </section>
                 {/* Tools section */}
-                <section className={sectionTailwind}>
+                <section className='section-thirds'>
                     <ToolsTable/>
                 </section>
             </section>
