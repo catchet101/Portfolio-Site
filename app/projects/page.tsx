@@ -1,5 +1,5 @@
 import React from 'react'
-import ProjectBox from '../components/projects/project-box'
+import ProjectBox from '../components/projects/ProjectBox'
 
 export default function ProjectsPage() {
     const projectsRowTailwind = 'flex flex-col sm:flex-row justify-center text-center mt-0 md:mt-16'

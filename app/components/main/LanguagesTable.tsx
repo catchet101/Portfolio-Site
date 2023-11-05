@@ -1,5 +1,5 @@
 import React from "react";
-import ProficiencyBar from "./proficiency-bar";
+import ProficiencyBar from "./ProficiencyBar";
 
 const allBarsColor:string = '#3535bd'
 const languageProficiencies = [
@@ -19,7 +19,7 @@ languageProficiencies.sort((item1, item2) => {
     return item2.percentage - item1.percentage
 })
 
-export default function LanguagesTable() {
+const LanguagesTable = () => {
     return (<>
         <h2 className='section-header'>
             Languages
@@ -48,3 +48,5 @@ export default function LanguagesTable() {
         </div>
     </>)
 }
+
+export default LanguagesTable

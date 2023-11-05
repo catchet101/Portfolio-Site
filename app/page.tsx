@@ -1,8 +1,8 @@
 // note: need to run 'vercel --prod' after pushing to main to get vercel to work
 'use client';
 import React from 'react';
-import LanguagesTable from './components/main/languages-table';
-import ToolsTable from './components/main/tools-table';
+import LanguagesTable from './components/main/LanguagesTable';
+import ToolsTable from './components/main/ToolsTable';
 
 const sectionTailwind = 'w-full mt-16 md:w-1/3 md:mt-0'
 

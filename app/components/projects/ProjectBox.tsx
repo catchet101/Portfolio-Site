@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function ProjectBox(props: { title: string, description: string, link: string }) {
+const ProjectBox = (props: { title: string, description: string, link: string }) => {
     const { title, description, link } = props
 
     console.log(link)
@@ -16,3 +16,5 @@ export default function ProjectBox(props: { title: string, description: string, 
         </figure>
     )
 }
+
+export default ProjectBox

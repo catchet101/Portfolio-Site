@@ -7,7 +7,7 @@ const tools = [
     {tool: 'Python Scikit Learn', img: 'https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg', link: 'https://scikit-learn.org/'},
 ]
 
-export default function ToolsTable() {
+const ToolsTable = () => {
     return (<>
         <h2 className='section-header'>
             Other Tools
@@ -30,3 +30,5 @@ export default function ToolsTable() {
         </div>
     </>)
 }
+
+export default ToolsTable
