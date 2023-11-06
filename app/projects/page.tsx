@@ -27,8 +27,13 @@ export default function ProjectsPage() {
                 </div>
                 <div className={projectsRowTailwind}>
                     <ProjectBox
+                        title='Portfolio Site'
+                        description='This portfolio website to show my (hopeful) future employers and anyone else who wants to see my work. Built in TypeScript using the Next.js React framework'
+                        link='/projects/portfolio-site'
+                    />
+                    <ProjectBox
                         title='Fall Hacks 2023'
-                        description='12 Hours to build a project based on the prompt: "Turning over a new leaf". <br> Created a text-based adventure game narrated by AI using OpenAI&#39;s API'
+                        description='12 Hours to build a project based on the prompt: "Turning over a new leaf". Created a text-based adventure game narrated by AI using OpenAI&#39;s API'
                         link='/projects/fall-hacks-2023'
                     />
                 </div>

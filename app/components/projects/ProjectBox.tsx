@@ -13,7 +13,9 @@ const ProjectBox = (props: { title: string, description: string, link: string })
             <h3 className='font-bold text-xl mb-4'>
                 {title}
             </h3>
-            <p className='leading-7' dangerouslySetInnerHTML={{ __html: description }}/>
+            <p className='leading-7'>
+                {description}
+            </p>
         </figure>
     )
 }
