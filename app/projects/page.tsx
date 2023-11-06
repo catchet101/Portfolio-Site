@@ -10,6 +10,9 @@ export default function ProjectsPage() {
                 <span className='font-bold'>Projects</span>
             </h1>
             <section className='flex flex-col'>
+                <p className='flex justify-center mt-4'>
+                    Below are some of the projects I've worked on. Click on them to learn more!
+                </p>
                 <div className={projectsRowTailwind}>
                     <ProjectBox
                         title='Manga Scroll'

@@ -1,8 +1,8 @@
 // note: may need to run 'vercel --prod' after pushing to main to get vercel to work
-'use client';
 import React from 'react';
 import LanguagesTable from './components/main/LanguagesTable';
 import ToolsTable from './components/main/ToolsTable';
+import styles from './app.module.css'
 
 const sectionTailwind = 'w-full mt-16 md:w-1/3 md:mt-0'
 
@@ -14,11 +14,11 @@ export default function Home() {
             </h1>
             <section className='flex flex-col md:flex-row mt-0 md:mt-16'>
                 {/* Languages section */}
-                <section className='section-thirds'>
+                <section className={styles.sectionThirds}>
                     <LanguagesTable/>
                 </section>
                 {/* About Me section */}
-                <section className='section-thirds flex flex-col text-center'>
+                <section className={styles.sectionThirds + ' flex flex-col text-center'}>
                     <h2 className='section-header'>
                         About Me
                     </h2>
@@ -29,7 +29,7 @@ export default function Home() {
                     </p>
                 </section>
                 {/* Tools section */}
-                <section className='section-thirds'>
+                <section className={styles.sectionThirds}>
                     <ToolsTable/>
                 </section>
             </section>
