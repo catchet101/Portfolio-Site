@@ -11,7 +11,7 @@ export default function ProjectsPage() {
             </h1>
             <section className='flex flex-col'>
                 <p className='flex justify-center mt-4'>
-                    Below are some of the projects I've worked on. Click on them to learn more!
+                    Below are some of the projects I&#39;ve worked on. Click on them to learn more!
                 </p>
                 <div className={projectsRowTailwind}>
                     <ProjectBox

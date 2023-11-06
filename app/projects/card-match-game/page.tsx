@@ -1,5 +1,6 @@
 import React from "react";
 import styles from '../projects.module.css'
+import { FaGithub } from 'react-icons/fa'
 
 export default function CardMatchGame() {
     return (
@@ -7,7 +8,7 @@ export default function CardMatchGame() {
             <h1 className='page-header'>
                 <span className='font-bold'>Card Match Game</span>
             </h1>
-            <section className='flex flex-col text-center'>
+            <section className='flex flex-col'>
                 <div className='flex flex-col md:flex-row justify-center text-center mt-0 md:mt-16'>
                     <div className={styles.overviewSection}>
                         <h2 className='section-header'>
@@ -25,7 +26,9 @@ export default function CardMatchGame() {
                     </div>
                 </div>
                 <div>
-                    
+                    <a href='https://github.com/catchet101/Card-Match-Game' className={styles.sourceLink}>
+                        Source&nbsp;<FaGithub/>
+                    </a>
                 </div>
             </section>
         </main>

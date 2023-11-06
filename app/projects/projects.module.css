@@ -1,3 +1,7 @@
 .overviewSection {
     @apply flex flex-col text-center w-full md:w-1/2 mt-16 md:mt-0 mr-0 md:mr-10;
 }
+
+.sourceLink {
+    @apply flex flex-row items-center justify-center text-lg
+}
