@@ -22,7 +22,7 @@ export default function CardMatchGame() {
                         </p>
                     </div>
                     <div className='flex justify-center w-full md:w-1/4 mt-16 md:mt-0'>
-                        <img src='/cardMatchGameEx.png' alt='Example image of the Card Match Game' className='w-4/6 md:w-full'/>
+                        <img src='/CardMatchGameEx.png' alt='Example image of the Card Match Game' className='w-4/6 md:w-full'/>
                     </div>
                 </div>
                 <div>
