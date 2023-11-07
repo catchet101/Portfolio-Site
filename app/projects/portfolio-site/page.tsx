@@ -9,7 +9,7 @@ export default function PortfolioSite() {
                 <span className='font-bold'>Portfolio Site</span>
             </h1>
             <section className='flex flex-col'>
-                <div className='flex flex-col md:flex-row justify-center text-center mt-0 md:mt-16 h-96'>
+                <div className={`${styles.projectDescBody} h-96`}>
                     <div className={styles.overviewSectionNoPic}>
                         <h2 className='section-header'>
                             Overview

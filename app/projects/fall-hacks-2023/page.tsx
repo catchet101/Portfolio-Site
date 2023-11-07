@@ -8,6 +8,9 @@ export default function FallHacks2023() {
                 <span className='font-bold'>Fall Hacks 2023</span>
             </h1>
             <section>
+                <div className={styles.projectDescBody}>
+
+                </div>
 
             </section>
         </main>

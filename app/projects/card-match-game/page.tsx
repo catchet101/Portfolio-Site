@@ -9,7 +9,7 @@ export default function CardMatchGame() {
                 <span className='font-bold'>Card Match Game</span>
             </h1>
             <section className='flex flex-col'>
-                <div className='flex flex-col md:flex-row justify-center text-center mt-0 md:mt-16'>
+                <div className={styles.projectDescBody}>
                     <div className={styles.overviewSection}>
                         <h2 className='section-header'>
                             Overview
