@@ -15,7 +15,8 @@ export default function PortfolioSite() {
                             Overview
                         </h2>
                         <p className='md:mx-8 leading-8'>
-                            Add description here
+                            I wanted to create a place where I had space to show off my current and future projects, while also learning more about web development.
+                            This website was built in Typescript using the Next.js React Framework
                         </p>
                     </div>
                 </div>

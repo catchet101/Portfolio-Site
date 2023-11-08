@@ -8,8 +8,8 @@ const Navbar = () => {
             <div className='mx-auto flex justify-between flex-col sm:flex-row max-w-3xl'>
                 <Link href='/' className={styles.navbarLink}>Cameron Lee</Link>
                 <Link href='/projects' className={styles.navbarLink}>Projects</Link>
-                <Link href='https://github.com/catchet101' className={styles.navbarLink + ' flex flex-row items-center'}>GitHub&nbsp;<FaGithub/></Link>
-                <Link href='/' className={styles.navbarLink}>Contact Me</Link>
+                <Link href='https://github.com/cameronlee101' target='_blank' className={styles.navbarLink + ' flex flex-row items-center'}>GitHub&nbsp;<FaGithub/></Link>
+                <Link href='/contact' className={styles.navbarLink}>Contact Me</Link>
             </div>
         </nav>
     )

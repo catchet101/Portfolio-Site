@@ -6,8 +6,8 @@ export default function ProjectsPage() {
 
     return (
         <main className='main'>
-            <h1 className='page-header'>
-                <span className='font-bold'>Projects</span>
+            <h1 className='page-header font-bold'>
+                Projects
             </h1>
             <section className='flex flex-col'>
                 <p className='flex justify-center mt-4'>
@@ -15,7 +15,7 @@ export default function ProjectsPage() {
                 </p>
                 <div className={projectsRowTailwind}>
                     <ProjectBox
-                        title='Manga Scroll'
+                        title='Manga Scroll (WIP)'
                         description='React Native JavaScript app that you can use to search up and read all of your favourite manga.'
                         link='/projects/manga-scroll'
                     />
@@ -27,7 +27,7 @@ export default function ProjectsPage() {
                 </div>
                 <div className={projectsRowTailwind}>
                     <ProjectBox
-                        title='Portfolio Site'
+                        title='Portfolio Site (WIP)'
                         description='This portfolio website to show my (hopeful) future employers and anyone else who wants to see my work. Built in TypeScript using the Next.js React framework'
                         link='/projects/portfolio-site'
                     />

@@ -21,7 +21,7 @@ export default function MangaScrollPage() {
                         </p>
                     </div>
                     <div className='flex justify-center w-full md:w-1/4 mt-16 md:mt-0'>
-                        <img src='/MangaScrollEx.png' alt='Example image of the Card Match Game' className='w-3/6 md:w-4/6'/>
+                        <img src='/MangaScrollGif.gif' alt='Example image of the Card Match Game' className='w-3/6 md:w-4/6'/>
                     </div>
                 </div>
                 <div>
