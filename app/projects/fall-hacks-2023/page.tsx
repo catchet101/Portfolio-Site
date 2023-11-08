@@ -13,14 +13,14 @@ export default function FallHacks2023() {
                     <h2 className='section-header'>
                         Overview
                     </h2>
-                    <p className='sm:mx-20 md:mx-40 lg:mx-80 leading-8'>
+                    <p className={styles.overviewDescription}>
                         To fit the theme of this hackathon, we decided to build a text-based adventure web application where you play
                         as a person who is tired of the tedius every day 9-5 grind and wants to experience something new.
                         They are suddenly transported to another world where they adventure and fight various enemies. <br/>
                     </p>
                 </div>
                 <div className='flex justify-center w-full mt-16'>
-                    <img src='/FallHacks2023Gif.gif' alt='Fall Hacks 2023 example gif' className='w-96'/>
+                    <img src='/FallHacks2023Gif.gif' alt='Fall Hacks 2023 example gif' id={styles.FallHacks2023Gif}/>
                 </div>
                 <div>
                     <a href='https://github.com/cameronlee101/fall-hacks-2023' className={styles.sourceLink}>

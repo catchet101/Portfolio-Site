@@ -13,7 +13,7 @@ export default function PortfolioSite() {
                     <h2 className='section-header'>
                         Overview
                     </h2>
-                    <p className='sm:mx-20 md:mx-40 lg:mx-80 leading-8'>                        
+                    <p className={styles.overviewDescription}>                        
                         I wanted to create a place where I had space to show off my current and future projects, while also learning more about web development.
                         This website was built in Typescript using the Next.js React Framework
                     </p>              

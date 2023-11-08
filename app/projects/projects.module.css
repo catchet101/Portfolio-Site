@@ -1,7 +1,14 @@
 .overviewSection {
     @apply flex flex-col text-center w-full mt-16;
 }
+.overviewDescription {
+    @apply sm:mx-20 md:mx-40 lg:mx-80 leading-8
+}
 
 .sourceLink {
     @apply flex flex-row items-center justify-center text-lg my-8
+}
+
+#FallHacks2023Gif {
+    width: 700px;
 }

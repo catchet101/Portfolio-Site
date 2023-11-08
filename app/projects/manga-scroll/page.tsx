@@ -12,7 +12,7 @@ export default function MangaScrollPage() {
                     <h2 className='section-header'>
                         Overview
                     </h2>
-                    <p className='sm:mx-20 md:mx-40 lg:mx-80 leading-8'>
+                    <p className={styles.overviewDescription}>
                         Built using the React Native framework in JavaScript, this manga reading application is a collaborative, non-academic group project. 
                         We utilized a Jira scrum board to assign and delegate tasks to each team member. <br/>
                         The goal for me when participating in this group project was to gain experience working with React Native along with all the technologies
