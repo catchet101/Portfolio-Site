@@ -13,4 +13,7 @@
     .section-header {
         @apply text-center text-2xl font-bold mb-4;
     }    
+    .center-all {
+        @apply flex flex-col items-center justify-center text-center
+    }
 }

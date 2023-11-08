@@ -8,17 +8,15 @@ export default function PortfolioSite() {
             <h1 className='page-header'>
                 <span className='font-bold'>Portfolio Site</span>
             </h1>
-            <section className='flex flex-col'>
-                <div className={`${styles.projectDescBody} h-96`}>
-                    <div className={styles.overviewSectionNoPic}>
-                        <h2 className='section-header'>
-                            Overview
-                        </h2>
-                        <p className='md:mx-8 leading-8'>
-                            I wanted to create a place where I had space to show off my current and future projects, while also learning more about web development.
-                            This website was built in Typescript using the Next.js React Framework
-                        </p>
-                    </div>
+            <section className='center-all'>
+                <div className={styles.overviewSection}>
+                    <h2 className='section-header'>
+                        Overview
+                    </h2>
+                    <p className='sm:mx-20 md:mx-40 lg:mx-80 leading-8'>                        
+                        I wanted to create a place where I had space to show off my current and future projects, while also learning more about web development.
+                        This website was built in Typescript using the Next.js React Framework
+                    </p>              
                 </div>
                 <div className='align-bottom'>
                     <a href='https://github.com/catchet101/Portfolio-Site' className={styles.sourceLink}>
