@@ -1,34 +1,32 @@
 import React from "react";
+import ItemBox from "./ItemBox";
 
 const tools = [
-    {tool: 'Git', img: 'https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg', link: 'https://git-scm.com/'},
-    {tool: 'Linux', img: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg', link: 'https://www.linux.org/'},
-    {tool: 'Python Pandas', img: 'https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg', link: 'https://pandas.pydata.org/'},
-    {tool: 'Python Scikit Learn', img: 'https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg', link: 'https://scikit-learn.org/'},
+    {tool: 'Git', imgPath: '/tools/git.png'},
+    {tool: 'Linux', imgPath: '/tools/linux.png'},
+    {tool: 'Python Pandas', imgPath: '/tools/pandas.png'},
+    {tool: 'Python Scikit Learn', imgPath: 'https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg'},
 ]
 
 const ToolsTable = () => {
     return (<>
         <h2 className='section-header'>
-            Other Tools
+            Tools
         </h2>
-        <div className='flex justify-center text-center'>
-            <table className='border-spacing-2 border-separate'>
-                <tbody>
-                    {tools.map(item => 
-                        <tr key={item.tool}>
-                            <td>
-                                {item.tool}
-                            </td>
-                            <td className='px-2'>
-                                <a href={item.link} target='_blank' rel='noreferrer'><img src={item.img} alt={item.tool} width={30} height={30}></img></a>
-                            </td>
-                        </tr>
-                    )}
-                </tbody>
-            </table>
+        <div className='flex justify-center text-left flex-wrap'>
+            {tools.map(item => 
+                <div key={item.tool}>
+                    <ItemBox item={item.tool} imgPath={item.imgPath}/>
+                </div>
+            )}
         </div>
     </>)
 }
+
+/*
+<a target="_blank" href="https://icons8.com/icon/20906/git">Git</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+<a target="_blank" href="https://icons8.com/icon/17842/linux">Linux</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+<a target="_blank" href="https://icons8.com/icon/xSkewUSqtErH/pandas">Pandas</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+*/
 
 export default ToolsTable

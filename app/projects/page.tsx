@@ -10,7 +10,7 @@ export default function ProjectsPage() {
                 Projects
             </h1>
             <section className='flex flex-col'>
-                <p className='flex justify-center mt-4'>
+                <p className='flex justify-center text-center mt-4'>
                     Below are some of the projects I&#39;ve worked on. Click on them to learn more!
                 </p>
                 <div className={projectsRowTailwind}>
