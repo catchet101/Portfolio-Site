@@ -5,7 +5,9 @@ const tools = [
     {tool: 'Git', imgPath: '/tools/git.png'},
     {tool: 'Linux', imgPath: '/tools/linux.png'},
     {tool: 'Python Pandas', imgPath: '/tools/pandas.png'},
-    {tool: 'Python Scikit Learn', imgPath: 'https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg'},
+    {tool: 'Python Scikit Learn', imgPath: '/tools/scikit_learn.svg'},
+    {tool: 'Hadoop', imgPath: '/tools/hadoop.png'},
+    {tool: 'Apache Spark', imgPath: '/tools/spark.png'}
 ]
 
 const ToolsTable = () => {
@@ -27,6 +29,7 @@ const ToolsTable = () => {
 <a target="_blank" href="https://icons8.com/icon/20906/git">Git</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
 <a target="_blank" href="https://icons8.com/icon/17842/linux">Linux</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
 <a target="_blank" href="https://icons8.com/icon/xSkewUSqtErH/pandas">Pandas</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+<a target="_blank" href="https://icons8.com/icon/69132/hadoop-distributed-file-system">Hadoop Distributed File System</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
 */
 
 export default ToolsTable

@@ -24,6 +24,11 @@ export default function ProjectsPage() {
                         description='Java-based game where the goal is to match all of the pairs of cards on the table in the least amount of attempts.'
                         link='/projects/card-match-game'
                     />
+                    <ProjectBox
+                        title='CMPT 272 Angular Site'
+                        description='Angular-based website used to help a group of superheroes by allowing citizens to report villain activity'
+                        link='/projects/cmpt272-angular-site'
+                    />
                 </div>
                 <div className={projectsRowTailwind}>
                     <ProjectBox
