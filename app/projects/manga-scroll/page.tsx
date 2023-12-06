@@ -20,7 +20,7 @@ export default function MangaScrollPage() {
                     </p>
                 </div>
                 <div className='flex justify-center w-full mt-16'>
-                    <img src='/MangaScrollGif.gif' alt='Manga Scroll example gif' className='w-64'/>
+                    <img src='/gifs/MangaScrollGif.gif' alt='Manga Scroll example gif' className='w-64'/>
                 </div>
                 <div>
                     <p className={styles.sourceLink}>

@@ -20,7 +20,7 @@ export default function FallHacks2023() {
                     </p>
                 </div>
                 <div className='flex justify-center w-full mt-16'>
-                    <img src='/FallHacks2023Gif.gif' alt='Fall Hacks 2023 example gif' id={styles.FallHacks2023Gif}/>
+                    <img src='/gifs/FallHacks2023Gif.gif' alt='Fall Hacks 2023 example gif' className='websiteGif'/>
                 </div>
                 <div>
                     <a href='https://github.com/cameronlee101/fall-hacks-2023' className={styles.sourceLink}>

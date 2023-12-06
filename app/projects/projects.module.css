@@ -9,6 +9,6 @@
     @apply flex flex-row items-center justify-center text-lg my-8
 }
 
-#FallHacks2023Gif {
+.websiteGif {
     width: 700px;
 }
