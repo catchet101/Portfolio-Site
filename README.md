@@ -3,6 +3,8 @@
 ## Description
 Portfolio website to show off my skills and past projects.
 
+View the website at [www.cameronlee.site](https://www.cameronlee.site)
+
 ## Technologies
 Built in Typescript utilizing the Next.js React framework
 
