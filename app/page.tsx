@@ -33,11 +33,3 @@ export default function Home() {
         </main>
     )
 }
-
-/*
-** Replace apostrophes with &#39; **
-I'm a 3rd year Computing Science student at SFU seeking my first co-op position. I'm still figuring out what area of Computer Science I want to specialize 
-in so I am open to any experience that will help me learn and grow.
-I am someone who always perserveres through any challenge that I face
-
-*/
