@@ -9,9 +9,9 @@ export default function ProjectsPage() {
 
     const projects = [
         {
-            title: 'Manga Scroll (WIP)',
-            description: 'React Native JavaScript app that you can use to search up and read all of your favourite manga.',
-            link: '/projects/manga-scroll',  
+            title: 'Genki Study Tool',
+            description: 'Website featuring various activities to help study the material in the Genki Japanese textbooks.',
+            link: '/projects/genki-study-tool',  
         },
         {
             title: 'Card Match Game',
@@ -24,13 +24,18 @@ export default function ProjectsPage() {
             link: '/projects/cmpt272-angular-site',
         },
         {
-            title: 'Portfolio Site (WIP)',
+            title: 'Manga Scroll',
+            description: 'React Native JavaScript app that you can use to search up and read all of your favourite manga.',
+            link: '/projects/manga-scroll',  
+        },
+        {
+            title: 'Portfolio Site',
             description: 'This portfolio website to show my (hopeful) future employers and anyone else who wants to see my work. Built in TypeScript using the Next.js React framework',
             link: '/projects/portfolio-site',
         },
         {
             title: 'Fall Hacks 2023',
-            description: '12 Hours to build a project based on the prompt: "Turning over a new leaf". Created a text-based adventure game narrated by AI using OpenAI&#39;s API',
+            description: '12 Hours to build a project based on the prompt: "Turning over a new leaf". Created a text-based adventure game narrated by AI using Open\'s API',
             link: '/projects/fall-hacks-2023',
         },
     ]

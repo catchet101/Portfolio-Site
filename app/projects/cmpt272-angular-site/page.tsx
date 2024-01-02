@@ -14,11 +14,11 @@ export default function CMPT272AngularSite() {
                         Overview
                     </h2>
                     <p className={styles.overviewDescription}>
-                        This Angular-based website is the final project of CMPT272: Web I - Client-side Development. Working off a set 
-                        of user requirements, I built an intuitive website that lets users report the location of any villan nuisance activity. <br/>
-                        This website uses the Leaflet map library to display the locations of any nuisances and allow users to click on the map 
-                        to select locations when creating a report. <br/>
-                        Reports and location information (such as name, latitude and longitude) are stored and managed on a remote server via a REST API.
+                        This website is the final project of CMPT272: Web I - Client-side Development. Working off a set 
+                        of user requirements, I built an intuitive website that lets users report the location of any villan nuisance activity. <br/><br/>
+                        The Angular-based website uses the Leaflet map library to display the locations of any nuisances and allow users to click on the map 
+                        to select locations when creating a report. Reports and location information (such as name, latitude and longitude) are 
+                        stored and managed on a remote server via a REST API.
                     </p>
                 </div>
                 <div className='flex justify-center w-full mt-16'>

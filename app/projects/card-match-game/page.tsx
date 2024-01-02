@@ -15,9 +15,9 @@ export default function CardMatchGame() {
                     </h2>
                     <p className={styles.overviewDescription}>
                         This is a Java based 2D card matching game where the objective is to patch all the pairs of cards in the least number of attempts.
-                        You get to choose the number of cards on the board. If you want a challenge, put in the maximum amount of cards! <br/>
+                        You get to choose the number of cards on the board. If you want a challenge, put in the maximum amount of cards! <br/><br/>
                         This project utilizes the Java Swing library to create the Graphical User Interface and is structured using the Maven project framework.
-                        My goal for this project was to develop my Object Oriented Programming skills while learning how to use the Java Swing library. <br/> 
+                        My goal for this project was to develop my Object Oriented Programming skills while learning how to use the Java Swing library.
                     </p>
                 </div>
                 <div className='flex justify-center w-full mt-16'>

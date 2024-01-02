@@ -14,7 +14,7 @@ export default function MangaScrollPage() {
                     </h2>
                     <p className={styles.overviewDescription}>
                         Built using the React Native framework in JavaScript, this manga reading application is a collaborative, non-academic group project. 
-                        We utilized a Jira scrum board to assign and delegate tasks to each team member. <br/>
+                        We utilized a Jira scrum board to assign and delegate tasks to each team member. <br/><br/>
                         The goal for me when participating in this group project was to gain experience working with React Native along with all the technologies
                         and processes associated with it.
                     </p>

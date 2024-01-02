@@ -16,7 +16,7 @@ export default function FallHacks2023() {
                     <p className={styles.overviewDescription}>
                         To fit the theme of this hackathon, we decided to build a text-based adventure web application where you play
                         as a person who is tired of the tedius every day 9-5 grind and wants to experience something new.
-                        They are suddenly transported to another world where they adventure and fight various enemies. <br/>
+                        They are suddenly transported to another world where they adventure and fight various enemies.
                     </p>
                 </div>
                 <div className='flex justify-center w-full mt-16'>
