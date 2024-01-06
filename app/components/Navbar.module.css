@@ -20,9 +20,9 @@
     width: 100vw;
     height: max-content;
     max-height: 0%;
-    padding-left: 5vw;
-    padding-bottom: 1vh;
-    left:-1vw;
+    padding-left: 1rem;
+    padding-bottom: 0.5rem;
+    left:0;
     position: fixed;
     overflow: hidden;
     @apply bg-slate-600;
