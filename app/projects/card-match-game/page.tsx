@@ -22,7 +22,7 @@ export default function CardMatchGame() {
                     </p>
                 </div>
                 <div className='flex justify-center w-full mt-16'>
-                    <Image src={'/gifs/CardMatchGameGif.gif'} alt={'Card Match Game example gif'} className='w-80'/>
+                    <Image src={'/gifs/CardMatchGameGif.gif'} alt={'Card Match Game example gif'} width={320} height={0}/>
                 </div>
                 <div>
                     <a href='https://github.com/catchet101/Card-Match-Game' className={styles.sourceLink}>

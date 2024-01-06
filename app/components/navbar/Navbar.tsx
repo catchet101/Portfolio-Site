@@ -3,9 +3,11 @@ import Link from 'next/link'
 import { FaGithub } from 'react-icons/fa'
 import styles from './Navbar.module.css'
 import { useEffect, useState } from 'react'
+import HamburgerButton from './HamburgerButton'
 
 const Navbar = () => {
     const [windowWidth, setWindowWidth] = useState(0)
+    const [navbarExpanded, setNavbarExpanded] = useState(false)
 
     // Keeps track of window width, used to conditionally render the navbar
     useEffect(() => {
@@ -21,12 +23,15 @@ const Navbar = () => {
       }
     }, [])
 
+    const expandNavbar = () => {
+        setNavbarExpanded(!navbarExpanded)
+    }
+
     if (windowWidth < 640) {
         return (
-            <nav className='bg-slate-600 sticky p-4 top-0 drop-shadow-xl z-10'>
-                <input className={styles.sideMenu} type='checkbox' id='sideMenu'/>
-                <label className={styles.hamb} htmlFor='sideMenu'><span className={styles.hambLine}></span></label>
-                <ul className={styles.menu}>
+            <nav className='bg-slate-600 top-0 h-16 sticky drop-shadow-xl z-10'>
+                <HamburgerButton onClick={expandNavbar}/>
+                <ul className={`${styles.menu} ${navbarExpanded ? styles.expanded : ''}`}>
                     <li><Link href='/' className={styles.navbarLink}>Cameron Lee</Link></li>
                     <li><Link href='/projects' className={styles.navbarLink}>Projects</Link></li>
                     <li><Link href='https://github.com/cameronlee101' target='_blank' className={styles.navbarLink}>GitHub&nbsp;<FaGithub/></Link></li>

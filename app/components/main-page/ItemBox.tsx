@@ -10,7 +10,7 @@ const ItemBox = ( props: {item:string, imgPath:string} ) => {
         <div>
             {props.item}&nbsp;
         </div>
-        <Image src={props.imgPath} alt={'Icon'} className='h-6'/>
+        <Image src={props.imgPath} alt={'Icon'} width={24} height={24}/>
     </div>
   )
 }

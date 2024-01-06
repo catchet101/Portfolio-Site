@@ -1,7 +1,7 @@
 // note: may need to run 'vercel --prod' after pushing to main to get vercel to work
 import React from 'react';
-import LanguagesTable from './components/main/LanguagesTable';
-import ToolsTable from './components/main/ToolsTable';
+import LanguagesTable from './components/main-page/LanguagesTable';
+import ToolsTable from './components/main-page/ToolsTable';
 import styles from './app.module.css'
 
 export default function Home() {

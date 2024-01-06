@@ -1,5 +1,5 @@
 import React from 'react'
-import ProjectBox from '../components/projects/ProjectBox'
+import ProjectBox from '../components/projects-page/ProjectBox'
 import styles from './projects.module.css'
 
 export default function ProjectsPage() {

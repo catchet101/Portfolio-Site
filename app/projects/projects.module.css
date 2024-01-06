@@ -19,7 +19,3 @@
 .sourceLink {
     @apply flex flex-row items-center justify-center text-lg my-8
 }
-
-.websiteGif {
-    width: 700px;
-}

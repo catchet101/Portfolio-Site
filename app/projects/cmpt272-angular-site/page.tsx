@@ -23,7 +23,7 @@ export default function CMPT272AngularSite() {
                     </p>
                 </div>
                 <div className='flex justify-center w-full mt-16'>
-                    <Image src={'/gifs/CMPT272AngularSiteGif.gif'} alt={'CMPT 272 Angular Site example gif'}  className='websiteGif'/>
+                    <Image src={'/gifs/CMPT272AngularSiteGif.gif'} alt={'CMPT 272 Angular Site example gif'} width={700} height={0}/>
                 </div>
                 <div>
                     <a href='https://github.com/cameronlee101/CMPT272-Angular-Site' className={styles.sourceLink}>
