@@ -1,6 +1,7 @@
 import React from "react";
 import styles from '../projects.module.css'
 import { FaGithub } from 'react-icons/fa'
+import Image from 'next/image';
 
 export default function CMPT272AngularSite() {
     return (
@@ -22,7 +23,7 @@ export default function CMPT272AngularSite() {
                     </p>
                 </div>
                 <div className='flex justify-center w-full mt-16'>
-                    <img src='/gifs/CMPT272AngularSiteGif.gif' alt='CMPT 272 Angular Site example gif' className='websiteGif'/>
+                    <Image src={'/gifs/CMPT272AngularSiteGif.gif'} alt={'CMPT 272 Angular Site example gif'}  className='websiteGif'/>
                 </div>
                 <div>
                     <a href='https://github.com/cameronlee101/CMPT272-Angular-Site' className={styles.sourceLink}>

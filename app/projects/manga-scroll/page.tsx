@@ -1,5 +1,6 @@
 import React from "react";
 import styles from '../projects.module.css'
+import Image from 'next/image';
 
 export default function MangaScrollPage() {
     return (
@@ -20,7 +21,7 @@ export default function MangaScrollPage() {
                     </p>
                 </div>
                 <div className='flex justify-center w-full mt-16'>
-                    <img src='/gifs/MangaScrollGif.gif' alt='Manga Scroll example gif' className='w-64'/>
+                    <Image src={'/gifs/MangaScrollGif.gif'} alt={'Manga Scroll example gif'} className='w-64'/>
                 </div>
                 <div>
                     <p className={styles.sourceLink}>

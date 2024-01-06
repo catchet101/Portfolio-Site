@@ -1,6 +1,7 @@
 import React from "react";
 import styles from '../projects.module.css'
 import { FaGithub } from "react-icons/fa";
+import Image from 'next/image';
 
 export default function GenkiStudyTool() {
     return (
@@ -22,7 +23,7 @@ export default function GenkiStudyTool() {
                     </p>
                 </div>
                 {/* <div className='flex justify-center w-full mt-16'>
-                    <img src='/gifs/FallHacks2023Gif.gif' alt='Fall Hacks 2023 example gif' className='websiteGif'/>
+                    <Image src={'/gifs/FallHacks2023Gif.gif'} alt={'Fall Hacks 2023 example gif'} className='websiteGif'/>
                 </div> */}
                 <div>
                     <a href='https://github.com/cameronlee101/Genki-Study-Tool' className={styles.sourceLink}>

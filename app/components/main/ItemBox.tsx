@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 const ItemBox = ( props: {item:string, imgPath:string} ) => {
@@ -9,7 +10,7 @@ const ItemBox = ( props: {item:string, imgPath:string} ) => {
         <div>
             {props.item}&nbsp;
         </div>
-        <img src={props.imgPath} className='h-6'></img>
+        <Image src={props.imgPath} alt={'Icon'} className='h-6'/>
     </div>
   )
 }
