@@ -23,19 +23,57 @@ const Navbar = () => {
       }
     }, [])
 
-    const expandNavbar = () => {
+    const toggleNavbar = () => {
         setNavbarExpanded(!navbarExpanded)
+    }
+
+    const closeNavbar = () => {
+        setNavbarExpanded(false)
     }
 
     if (windowWidth < 640) {
         return (
             <nav className='bg-slate-600 top-0 h-16 sticky drop-shadow-xl z-10'>
-                <HamburgerButton onClick={expandNavbar}/>
+                <HamburgerButton onClick={toggleNavbar} isOpened={navbarExpanded}/>
                 <ul className={`${styles.menu} ${navbarExpanded ? styles.expanded : ''}`}>
-                    <li><Link href='/' className={styles.navbarLink}>Cameron Lee</Link></li>
-                    <li><Link href='/projects' className={styles.navbarLink}>Projects</Link></li>
-                    <li><Link href='https://github.com/cameronlee101' target='_blank' className={styles.navbarLink}>GitHub&nbsp;<FaGithub/></Link></li>
-                    <li><Link href='/contact' target='' className={styles.navbarLink}>Contact Me</Link></li>
+                    <li>
+                        <Link 
+                            href='/' 
+                            className={styles.navbarLink} 
+                            onClick={closeNavbar}
+                        >
+                            Cameron Lee
+                        </Link>
+                    </li>
+                    <li>
+                        <Link 
+                        href='/projects' 
+                        className={styles.navbarLink}  
+                        onClick={closeNavbar}
+                        >
+                            Projects
+                        </Link>
+                    </li>
+                    <li>
+                        <Link 
+                            href='https://github.com/cameronlee101' 
+                            target='_blank' 
+                            className={styles.navbarLink}  
+                            onClick={closeNavbar}
+                        >
+                            GitHub&nbsp;<FaGithub/>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link 
+                            href='/contact' 
+                            target='' 
+                            className={styles.navbarLink}  
+                            onClick={closeNavbar}
+                        >
+                            Contact Me  
+                        </Link>
+                    </li>
                 </ul>
             </nav>
         )

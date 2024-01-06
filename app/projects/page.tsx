@@ -3,8 +3,6 @@ import ProjectBox from '../components/projects-page/ProjectBox'
 import styles from './projects.module.css'
 
 export default function ProjectsPage() {
-    const row1Bounds = [0, 3]
-    const row2Bounds = [3, 6]
     const fadeInInterval = 800
 
     const projects = [
@@ -49,17 +47,10 @@ export default function ProjectsPage() {
                 <p className='flex justify-center text-center mt-4'>
                     Below are some of the projects I&#39;ve worked on. Click on them to learn more!
                 </p>
-                <div className={styles.projectsRow}>
-                    {projects.slice(row1Bounds[0], row1Bounds[1]).map((item, index) => 
-                        <div className={styles.projectBox} key={item.title}>
+                <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-6 lg:gap-y-12 gap-x-4 lg:gap-x-10 mx-6 lg:mx-20 mt-8 justify-center align-top'>
+                    {projects.map((item, index) => 
+                        <div className='h-auto w-fit' key={item.title}>
                             <ProjectBox title={item.title} description={item.description} link={item.link} delay={index * fadeInInterval}></ProjectBox>
-                        </div>
-                    )}
-                </div>
-                <div className={styles.projectsRow}>
-                    {projects.slice(row2Bounds[0], row2Bounds[1]).map((item, index) => 
-                        <div className={styles.projectBox} key={item.title}>
-                            <ProjectBox title={item.title} description={item.description} link={item.link} delay={(index + row2Bounds[0]) * fadeInInterval}></ProjectBox>
                         </div>
                     )}
                 </div>

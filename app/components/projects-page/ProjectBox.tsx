@@ -22,10 +22,10 @@ const ProjectBox = (props: { title: string, description: string, link: string, d
             onClick={() => {window.location.href = link}} 
             className={`${styles.projectBox} ${isVisible ? styles.visible : ''}`}
         >
-            <h3 className='font-bold text-xl mb-4'>
+            <h3 className='font-bold text-xl mb-4 text-center'>
                 {title}
             </h3>
-            <p className='leading-7'>
+            <p className='leading-7 text-center'>
                 {description}
             </p>
         </figure>

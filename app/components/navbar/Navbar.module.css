@@ -24,6 +24,7 @@
     overflow: hidden;
     @apply bg-slate-600 space-y-2;
     transition: all .5s ease-out;
+    z-index: -10;
 }
 
 /* Toggle menu icon */
