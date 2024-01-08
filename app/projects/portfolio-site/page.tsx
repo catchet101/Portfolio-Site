@@ -15,7 +15,7 @@ export default function PortfolioSite() {
                     </h2>
                     <p className={styles.overviewDescription}>                        
                         I wanted to create a place where I had space to show off my current and future projects, while also learning more about web development.
-                        This website was built in Typescript using the Next.js React Framework
+                        This website was built in Typescript using the Next.js React Framework and was deployed on Vercel.
                     </p>              
                 </div>
                 <div className='align-bottom'>
