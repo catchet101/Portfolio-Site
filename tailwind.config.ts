@@ -1,20 +1,18 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from "tailwindcss";
+import { nextui } from "@nextui-org/react";
 
 const config: Config = {
   content: [
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {},
-    boxShadow: {
-      'projectFigure': '10px 15px 25px 0px rgba(0, 0, 0, 0.2)'
-    }
   },
-  plugins: [
-    require('@tailwindcss/typography'),
-  ],
-}
+  darkMode: "class",
+  plugins: [require("@tailwindcss/typography"), nextui()],
+};
 
-export default config
+export default config;
