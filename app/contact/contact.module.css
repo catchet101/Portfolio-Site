@@ -1,5 +1,0 @@
-.contactLink {
-    @apply flex flex-row items-center justify-center 
-    text-xl bg-slate-500 w-fit mt-8 p-2 rounded-lg
-    hover:shadow-projectFigure transition duration-300 ease-in-out translate-y-0 hover:-translate-y-1 hover:cursor-pointer
-}
