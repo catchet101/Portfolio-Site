@@ -9,7 +9,11 @@ const config: Config = {
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      height: {
+        "screen-minus-4rem": "calc(100vh - 4rem)",
+      },
+    },
   },
   darkMode: "class",
   plugins: [require("@tailwindcss/typography"), nextui()],

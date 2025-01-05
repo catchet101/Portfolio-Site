@@ -1,14 +1,17 @@
 # Portfolio Site
 
 ## Description
+
 Portfolio website to show off my skills and past projects.
 
 View the website at [www.cameronlee.site](https://www.cameronlee.site)
 
 ## Technologies
+
 Built in Typescript utilizing the Next.js React framework
 
 ## Running Locally
+
 1. Clone responsitory
 
 2. Ensure npm or equivalent is installed on your system

@@ -3,17 +3,17 @@
 @tailwind utilities;
 
 @layer components {
-    /* General page tailwind style classes */
-    .main {
-        @apply px-6 lg:px-0 mx-auto mb-8 text-white/90 2xl:max-h-screen;
-    }
-    .page-header {
-        @apply text-center text-4xl mt-16;
-    }
-    .section-header {
-        @apply text-center text-2xl font-bold mb-4;
-    }    
-    .center-all {
-        @apply flex flex-col items-center justify-center text-center
-    }
+  /* General page tailwind style classes */
+  .main {
+    @apply px-6 lg:px-0 mx-auto mb-8 text-white/90 2xl:max-h-screen;
+  }
+  .page-header {
+    @apply text-center text-4xl mt-16;
+  }
+  .section-header {
+    @apply text-center text-2xl font-bold mb-4;
+  }
+  .center-all {
+    @apply flex flex-col items-center justify-center text-center;
+  }
 }

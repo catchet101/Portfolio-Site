@@ -1,40 +1,128 @@
-import React from "react";
-import { Navbar, NavbarContent, NavbarItem, Link } from "@nextui-org/react";
+"use client";
 
-const TopNavbar = () => {
+import React, { useEffect, useState } from "react";
+import {
+  Navbar,
+  NavbarContent,
+  NavbarItem,
+  Link,
+  NavbarMenuToggle,
+} from "@nextui-org/react";
+
+interface Section {
+  headerTitle: string;
+  headerRef: React.MutableRefObject<any>;
+  headerID: string;
+}
+
+interface Props {
+  sections: Section[];
+}
+
+const TopNavbar: React.FC<Props> = ({ sections }) => {
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  // On user scroll, calculates the section that they're nearest to to highlight accordingly in the navbar
+  useEffect(() => {
+    const handleScroll = (e: any) => {
+      var index = nearestIndex(
+        window.scrollY,
+        sections,
+        0,
+        sections.length - 1,
+      );
+      setActiveIndex(index);
+    };
+    document.addEventListener("scroll", handleScroll);
+    return () => {
+      document.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  // Calculates which section on the page the user is closest to
+  const nearestIndex = (
+    currentPosition: number,
+    sectionPositionArray: Section[],
+    startIndex: number,
+    endIndex: number,
+  ) => {
+    if (startIndex === endIndex) return startIndex;
+    else if (startIndex === endIndex - 1) {
+      if (
+        Math.abs(
+          sectionPositionArray[startIndex].headerRef.current.offsetTop -
+            currentPosition,
+        ) <
+        Math.abs(
+          sectionPositionArray[endIndex].headerRef.current.offsetTop -
+            currentPosition,
+        )
+      )
+        return startIndex;
+      else return endIndex;
+    } else {
+      var nextNearest = ~~((startIndex + endIndex) / 2);
+      var a = Math.abs(
+        sectionPositionArray[nextNearest].headerRef.current.offsetTop -
+          currentPosition,
+      );
+      var b = Math.abs(
+        sectionPositionArray[nextNearest + 1].headerRef.current.offsetTop -
+          currentPosition,
+      );
+      if (a < b) {
+        return nearestIndex(
+          currentPosition,
+          sectionPositionArray,
+          startIndex,
+          nextNearest,
+        );
+      } else {
+        return nearestIndex(
+          currentPosition,
+          sectionPositionArray,
+          nextNearest,
+          endIndex,
+        );
+      }
+    }
+  };
+
+  // Scrolls to a section with an offset to account for navbar
+  const scrollToSection = (section: Section) => {
+    const target = document.getElementById(section.headerID);
+    if (target) {
+      const offset = 64;
+      const targetPosition =
+        target.getBoundingClientRect().top + window.pageYOffset;
+      const offsetPosition = targetPosition - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
-    <Navbar shouldHideOnScroll className="bg-slate-200">
-      {/* <Button as={Link} color="primary">
-        <p className="font-bold text-inherit">Cameron Lee</p>
-      </Button> */}
-      <NavbarContent justify="start">
-        <NavbarItem>
-          <Link color="foreground" href="#">
-            Cameron Lee
-          </Link>
-        </NavbarItem>
-      </NavbarContent>
+    <Navbar className="bg-slate-200">
       <NavbarContent
-        className="hidden sm:flex sm:mx-auto gap-4"
+        className="flex justify-center items-center mx-auto gap-4 sm:gap-8 md:gap-12"
         justify="center"
       >
-        <NavbarItem>
-          <Link color="foreground" href="#">
-            About Me
-          </Link>
-        </NavbarItem>
-        <NavbarItem isActive>
-          <Link href="#" aria-current="page">
-            Projects
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link color="foreground" href="#">
-            Contact Me
-          </Link>
-        </NavbarItem>
+        {sections.map((section, index) => (
+          <NavbarItem key={index}>
+            <Link
+              color={activeIndex === index ? "primary" : "foreground"}
+              className="cursor-pointer"
+              size="lg"
+              onPress={(e) => scrollToSection(section)}
+            >
+              {section.headerTitle}
+            </Link>
+          </NavbarItem>
+        ))}
       </NavbarContent>
-      <NavbarContent justify="end" />
     </Navbar>
   );
 };
